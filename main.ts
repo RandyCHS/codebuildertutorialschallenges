@@ -50,6 +50,12 @@ player.onChat("Challenge2", function () {
     numFwd = 3
     agent.move(FORWARD, numFwd)
 })
+player.onChat("Challenge4", function () {
+    xPos = 164
+    yPos = 4
+    zPos = 7
+    agent.teleport(world(xPos, yPos, zPos), WEST)
+})
 player.onChat("compass", function () {
     p = player.position()
     east = positions.add(
