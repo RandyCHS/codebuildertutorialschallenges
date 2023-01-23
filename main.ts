@@ -169,6 +169,12 @@ player.onChat("Challenge1", function () {
     numFwd = 10
     agent.move(FORWARD, numFwd)
 })
+player.onChat("Challenge5", function () {
+    xPos = 145
+    yPos = 4
+    zPos = -23
+    agent.teleport(world(xPos, yPos, zPos), NORTH)
+})
 let south: Position = null
 let north: Position = null
 let down: Position = null
